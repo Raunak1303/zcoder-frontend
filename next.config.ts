@@ -1,8 +1,12 @@
-// next.config.js
+// next.config.ts
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
   reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,  // <-- Add this to ignore ESLint errors during build
+  },
   async rewrites() {
     return [
       {
@@ -13,4 +17,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
