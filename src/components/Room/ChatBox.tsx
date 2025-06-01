@@ -25,7 +25,7 @@ const ChatBox: FC<ChatBoxProps> = ({ messages, onSend }) => {
   }, [messages]);
 
   return (
-    <div className="flex flex-col bg-zinc-900 rounded-xl shadow-lg border border-zinc-700 h-full max-h-[500px]">
+    <div className="flex flex-col bg-zinc-900 rounded-xl shadow-lg border border-zinc-700 h-full max-h-[500px] w-full max-w-[800px]">
       {/* Header */}
       <div className="p-4 border-b border-zinc-700">
         <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 tracking-wide animate-pulse">
